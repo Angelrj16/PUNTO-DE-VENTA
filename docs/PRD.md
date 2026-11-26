@@ -6,10 +6,10 @@
 
 | Campo | Valor |
 | --- | --- |
-| Alumno | Angel Jimenez |
-| Proyecto n.º | Punto de Venta |
-| Sitio de referencia | POS Comercial / Bodega |
-| Compañero revisor | (por asignar) |
+| Alumno | Angel Rafael Jimenez Diaz |
+| Proyecto n.º | Punto de Venta (Lector de código de barras + Tabla hash) |
+| Sitio de referencia | Loyverse |
+| Compañero revisor | Carlos |
 | URL desplegada | (se completa en el Sprint 5) |
 
 ## 1. Problema
@@ -32,11 +32,11 @@ Un cajero registra una venta de 3 o más artículos en menos de 10 segundos con 
 
 Entre 5 y 8 funcionalidades que entran este semestre:
 
-1. Catálogo y gestión de productos.
-2. Punto de cobro y registro de ventas (carrito y totalización).
-3. Control de inventario y actualización automática de stock.
-4. Gestión de clientes frecuentes y su historial.
-5. Reporte diario de ventas e ingresos.
+1. Pantalla de ingreso de productos (nombre, precio, cantidad, detalles cortos, imagen opcional y generación automática de identificador único vinculado a un hash).
+2. Pantalla de escaneo con cámara (mensaje inicial, activación de cámara web/móvil, indicador de procesamiento y búsqueda instantánea del producto por tabla hash).
+3. Punto de cobro y registro de ventas (carrito y totalización).
+4. Control de inventario y actualización automática de stock.
+5. Gestión de clientes y reportes diarios de ventas.
 
 ### Funcionalidades → carpetas de `src/` (screaming architecture)
 
@@ -44,11 +44,11 @@ Cada funcionalidad del alcance será una carpeta en `src/`. Nómbralas en inglé
 
 | Funcionalidad | Carpeta |
 | --- | --- |
-| Productos y precios | `src/products` |
+| Productos, ingreso y hash único | `src/products` |
+| Escáner de cámara y búsqueda | `src/scanner` |
 | Registro de ventas | `src/sales` |
 | Control de inventario | `src/inventory` |
-| Clientes | `src/customers` |
-| Reportes de venta | `src/reports` |
+| Clientes y reportes | `src/customers` |
 
 ## 5. Fuera de alcance
 
@@ -125,7 +125,8 @@ erDiagram
 
 ## 9. Reto técnico distintivo
 
-El reto técnico asignado del catálogo y la estructura de datos para resolverlo (Sprint 6).
+**Lector de código de barras con la cámara + tabla hash por código:**
+Cada producto ingresado genera un código/identificador único vinculado a un hash. Al escanear con la cámara, se procesa la lectura y se consulta una tabla hash propia (`src/shared/structures/hash-table.ts`) para identificar el producto en tiempo constante promedio $O(1)$.
 
 ## 10. Riesgos y preguntas abiertas
 

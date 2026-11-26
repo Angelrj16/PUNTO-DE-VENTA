@@ -1,7 +1,7 @@
 # Punto de Venta
 
-> Sistema de punto de venta e inventario para tiendas y bodegas comerciales.
-> Proyecto del catálogo · [PRD](docs/PRD.md) · URL publicada: (se completa en el Sprint 5)
+> Punto de venta con lector de código de barras por cámara y tabla hash por código.
+> Alumno: Angel Rafael Jimenez Diaz · Sitio de referencia: Loyverse · [PRD](docs/PRD.md) · URL publicada: (se completa en el Sprint 5)
 
 Plantilla del proyecto de **Lenguaje de Programación · 2026**.
 La guía completa de la actividad está en el repositorio del curso:
