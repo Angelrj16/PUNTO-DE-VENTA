@@ -1,7 +1,7 @@
-# Mi producto
+# Punto de Venta
 
-> **Alumno:** cambia este título por el nombre de tu producto y esta línea por una frase que lo explique.
-> Proyecto n.º __ del catálogo · Sitio de referencia: __ · [PRD](docs/PRD.md) · URL publicada: __
+> Punto de venta con lector de código de barras por cámara y tabla hash por código.
+> Alumno: Angel Rafael Jimenez Diaz · Sitio de referencia: Loyverse · [PRD](docs/PRD.md) · URL publicada: (se completa en el Sprint 5)
 
 Plantilla del proyecto de **Lenguaje de Programación · 2026**.
 La guía completa de la actividad está en el repositorio del curso:
